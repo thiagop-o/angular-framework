@@ -15,7 +15,9 @@ Rode `ng generate component component-name` para gerar um novo component. Você 
 
 Rode `ng build` para 'buildar' o projeto.  Os artefatos contruidos serão armazenados no diretorio `dist/` .
 
-API Publica utilizada nesse projeto: [{JSON} Placeholder](https://jsonplaceholder.typicode.com)
+<hr>
+
+API Publica utilizada neste projeto: [{JSON} Placeholder](https://jsonplaceholder.typicode.com)
 
 Tela de Exemplo:
 
