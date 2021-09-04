@@ -1,0 +1,53 @@
+<div class="card rounded-3 shadow-sm p-2 mt-2">
+  <div class="d-flex">
+    <div class="flex-fill pr-3">
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <div class="input-group-text">Filtro: </div>
+          </div>
+          
+          <input
+            type="text"
+            class="form-control"
+            [(ngModel)]="_filtroPosts"
+            placeholder="Filtrar por Titulo"
+            (keyup)="filtroPosts()"
+          />
+        </div>
+    </div>
+
+  </div>
+  
+
+  <table class="table table-hover">
+    <thead class="thead-light text-center">
+      <tr >
+        <th scope="col">Usuário</th>
+        <th scope="col">Id</th>
+        <th scope="col">Titulo</th>
+        <th scope="col">Mensagens</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let post of postsFiltrados" class="table-striped">
+        <td scope="row" class="text-center">{{ post.userId | name }}</td>
+        <td class="text-center">{{ post.id }}</td>
+        <td class="text-center">{{ post.title }}</td>
+        <td class="text-center">{{ post.body }}</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr *ngIf="!posts.length">
+        <td colspan="8" class="text-center">
+          <h4>Nenhum Evento Encontrado</h4>
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+
+<mat-paginator [length]="length"
+               [pageSize]="pageSize"
+               (page)="getPaginatorData($event)"
+               aria-label="Select page">
+</mat-paginator>

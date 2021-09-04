@@ -1,0 +1,51 @@
+<div class="card rounded-3 shadow-sm p-2 mt-2">
+  <div class="d-flex">
+    <div class="flex-fill pr-3">
+        <div class="input-group mb-2">
+          <div class="input-group-prepend">
+            <div class="input-group-text">Filtro: </div>
+          </div>
+          
+          <input
+            type="text"
+            class="form-control"
+            [(ngModel)]="_filtroAlbums"
+            placeholder="Filtrar por Titulo"
+            (keyup)="filtroPosts()"
+          />
+        </div>
+    </div>
+
+  </div>
+  
+
+  <table class="table table-hover">
+    <thead class="thead-light text-center">
+      <tr >
+        <th scope="col">Usuário</th>
+        <th scope="col">Id</th>
+        <th scope="col">Titulo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let album of albumsFiltrados" class="table-striped">
+        <td scope="row" class="text-center">{{ album.userId | name }}</td>
+        <td class="text-center">{{ album.id }}</td>
+        <td class="text-center">{{ album.title }}</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr *ngIf="!albums.length">
+        <td colspan="8" class="text-center">
+          <h4>Nenhum Evento Encontrado</h4>
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+
+<mat-paginator [length]="length"
+               [pageSize]="pageSize"
+               (page)="getPaginatorData($event)"
+               aria-label="Select page">
+</mat-paginator>
