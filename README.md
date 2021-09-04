@@ -1,27 +1,22 @@
-# FrameworkTeste
+# Framework Teste
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
+Este projeto foi criado em Angular [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1. , visto que decidi principalmente me desafiar a criar uma UI em uma angular que só realizei alguns exercicios com ela.
 
-## Development server
+Para iniciar o projeto, seguir os passos abaixo:
+## Servidor de Desenvolvimento
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Rode `ng serve` em um servidor de desenvolvimento. Navegue até `http://localhost:4200/`. o App irá recarregar automaticamente se você fizer qualquer alteração no código fonte.
 
-## Code scaffolding
+## Scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Rode `ng generate component component-name` para gerar um novo component. Você pode também usar `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Rode `ng build` para 'buildar' o projeto.  Os artefatos contruidos serão armazenados no diretorio `dist/` .
 
-## Running unit tests
+API Publica utilizada nesse projeto: [{JSON} Placeholder](https://jsonplaceholder.typicode.com)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Tela de Exemplo:
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![image](./src/assets/example.png)
