@@ -2,6 +2,9 @@
 
 Este projeto foi criado em Angular [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1. , visto que decidi principalmente me desafiar a criar uma UI em uma angular que só realizei alguns exercicios com ela.
 
+Para acessar o site, utilizar o link: 
+[Angular - Framework](https://angular-framework.netlify.app)
+
 Para iniciar o projeto, seguir os passos abaixo:
 ## Servidor de Desenvolvimento
 
